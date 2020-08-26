@@ -28,14 +28,54 @@ function tipAmount(subtotal, level) {
         else if(level == 'fair') { tipPercent = .15 } 
         else if(level == 'bad') { tipPercent = .10 }
         else { console.log('incorrect input') }
-    return console.log(subtotal * tipPercent + ' dollars is the appropriate tip amount.')
+    return subtotal * tipPercent
 };
 
+tipAmount(100, 'good')
+
+//function to return total amount, tip calculator 2
 
 function totalAmount(billAmount, service) {
-    return billAmount += (tipAmount(billAmount, service))
+    return tipAmount(billAmount, service) + billAmount
 }
 
 console.log(totalAmount(100, 'good'))
 
+//tip calculator 3
 
+function splitAmount(billAmount, level, numBills) {
+    let totalBill = totalAmount(billAmount,level)
+    return totalBill / numBills
+}
+
+console.log(splitAmount(100,'good', 3))
+
+//print numbers
+
+printNumbers = (a, b) => {
+
+    /*FOR loop version
+    for(a; a<=b; a++)  {
+        console.log(a)
+    }
+    */
+
+    while(a <= b) {
+        console.log(a)
+        a+=1;
+    }
+
+}
+
+printNumbers(1, 10)
+
+//print a square
+
+function printSquare(l) {
+    //l represents length of side.
+    for(index = 0; index < l; index++) {
+        console.log('*'.repeat(l))
+    }
+}
+
+printSquare(5)
