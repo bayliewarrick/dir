@@ -79,3 +79,7 @@ function printSquare(l) {
 }
 
 printSquare(5)
+
+function printBox(w, h) {
+
+}
