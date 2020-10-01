@@ -2,21 +2,15 @@
 function renderMovies(movie) {
     return `
         <div class="text-center mt-5">
-
             <h3>Title: 
                 <a href="https://www.imdb.com/title/${movie.imdbID}">
                     ${movie.title}
                 </a>
             </h3>
-
             <p>Rating: ${movie.imdbRating} | Released: ${movie.year}</p>
-
             <img src="${movie.poster}" />
-
             <hr />
-
         </div>
-        
     `
 }
 
