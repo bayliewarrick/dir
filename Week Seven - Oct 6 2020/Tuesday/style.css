@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+#profile {
+    padding:20px;
+    transition:.5s;
+}
+
+#generate {
+    padding:20px;
+}
